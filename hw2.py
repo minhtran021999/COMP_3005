@@ -33,13 +33,13 @@ You should submit two .py files, this file and a new file you create for problem
 
 def seconds_to_hms(seconds):
 	'''
-	Converts a given number of seconds into hours, minutes, and seconds format.
+	Converts a given number of seconds into hours, minutes, and seconds format
 
 	Parameters:
-	seconds (int): The total number of seconds to be converted.
+	seconds (int): The total number of seconds to be converted
 
 	Returns:
-	str: A string representing the time in "xx h, xx m, xx s" format.
+	str: A string representing the time in "xx h, xx m, xx s" format
 	'''
 	hrs = seconds // 3600
 	mins = (seconds % 3600) // 60
@@ -58,25 +58,25 @@ print(f'1 The result is: {seconds_to_hms(3665)}')  #Test
 
 def miles_to_km(distance: float):
 	'''
-	Converts a distance from miles to kilometers.
+	Converts a distance from miles to kilometers
 
 	Parameters:
-	distance (float): The distance in miles to be converted.
+	distance (float): The distance in miles to be converted
 
 	Returns:
-	float: The equivalent distance in kilometers.
+	float: The equivalent distance in kilometers
 	'''
 	return distance * 1.6
 
 def km_to_miles(distance: float):
 	'''
-	Converts a distance from kilometers to miles.
+	Converts a distance from kilometers to miles
 
 	Parameters:
-	distance (float): The distance in kilometers to be converted.
+	distance (float): The distance in kilometers to be converted
 
 	Returns:
-	float: The equivalent distance in miles.
+	float: The equivalent distance in miles
 	'''
 	return distance * 0.62
 
@@ -91,12 +91,23 @@ print(f'2 10 kilometers equal to {km_to_miles(10)} miles')  #Test
 # 1 sqm = 10.7639 sqft
 # 1 euro = 1.08 dollars
 
-#def function(....):
-#	...
-#	...
-#	return val1, val2
-#	
-#result1, result2 = function(...)
+def europe_US(sqm_to_sqft: float, euro_to_dollars: float):
+	'''
+	Converts square meters to square feet and euros to dollars
+
+	Parameters:
+	sqm_to_sqft (float): Square meters to be converted
+	euro_to_dollars (float): Euros to be converted
+
+	Returns:
+	tuple: a tuple containing converted square feet and US dollars
+	'''
+	sqft = sqm_to_sqft * 10.7639
+	dollars = euro_to_dollars * 1.08
+	return sqft, dollars
+
+result1, result2 = europe_US(15, 20)  #Test
+print(f'3 50 sqm equal to {result1} sqft & 100 euros equal to {result2} dollars')
 
 # 4. Create a function called road_trip that takes 1 parameter, mpg (miles per gallon), of type float. 
 # The function should ask for user input on how far they intend to drive on their road trip. Once 
@@ -104,12 +115,57 @@ print(f'2 10 kilometers equal to {km_to_miles(10)} miles')  #Test
 # Use $3.07 as the average cost of a gallon of gas. Return the total cost of gas for the road trip. 
 # (15 points)
 
+def road_trip(mpg: float):
+	'''
+	Calculates total cost of gas for a road trip based on mpg and distance driven
+	
+	Parameters:
+	mpg (float): Miles per gallon of the vehicle
+
+	Inputs:
+	Distance (float): Distance to be driven in miles
+	
+	Returns:
+	float: Total cost of gas for the road trip
+	'''
+	distance = float(input('Please enter the distance you plan to drive (in miles): '))
+	gallons_needed = distance / mpg
+	cost_per_gallon = 3.07
+	total_cost = gallons_needed * cost_per_gallon
+	return total_cost
+print(f'4 The total cost of gas for the road trip is: ${road_trip(30):.2f}')  #Test
+
 
 # 5. Create a function called insulate_home_cost that takes no parameters and asks the user to input 
 # the length, width and height of the the basement of their house. Once you have these values,
 # calculate the surface area (sq ft) of each side of the basement and use $2.75 as the average cost 
 # of spray foam insulation per sq ft. Once you have that value multiply. Return the total insulation 
 # cost. (15 points)
+
+def insulate_home_cost():
+	'''
+	Calculates the total cost of insulating a home's basement based on provided dimensions
+
+	Parameters:
+	None
+
+	Inputs:
+	Length (float): Length of the basement in feet
+	Width (float): Width of the basement in feet
+	Height (float): Height of the basement in feet
+
+	Returns:
+	Total cost of insulation (float)	
+	'''
+
+	length = float(input('Please enter the length of the basement in feet: '))
+	width = float(input('Please enter the width of the basement in feet: '))
+	height = float(input('Please enter the height of the basement in feet: '))
+	surface_area = (length * height) * (width * height) * 2 # Only walls, no floor or ceiling
+	cost_per_sqft = 2.75
+	total_cost = surface_area * cost_per_sqft
+	return total_cost
+print(f'5 The total cost of insulating the basement is: ${insulate_home_cost():.2f}')  #Test
 	
 
 # 6. We're going to practice importing functions from another file. Complete the following steps:
@@ -121,6 +177,9 @@ print(f'2 10 kilometers equal to {km_to_miles(10)} miles')  #Test
 #  - Run this line of code: midpoint_of_10 = midpoint(10)
 # (20 points)
 
+from extra_functions_hw2 import midpoint
+midpoint_of_10 = midpoint(100)
+print(f'6 The midpoint between 10 and 0 is: {midpoint_of_10}')  #Test
 
 # 7. Fix the following code (10 points)
 
