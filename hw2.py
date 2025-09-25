@@ -183,27 +183,25 @@ print(f'6 The midpoint between 10 and 0 is: {midpoint_of_10}')  #Test
 
 # 7. Fix the following code (10 points)
 
-def myFunc (height, weight, age):
+def BMI(height, weight):
 	'''
-	This should be a short explanation of what this function does.
-	
-	h : some value
-	w : some other value
-	
-	return :
-	None
+	Calculates the Body Mass Index (BMI) based on height and weight
+
+	Parameters:
+	height (float): Height in inches
+	weight (float): Weight in pounds
+
+	Returns:
+	float: The calculated BMI
 	'''
-	
-	#Just doing some math, don't me.
-	temp = height * age
-	
-	temp2 = height * 12
-	
-	temp2 = weight / height **2 * 703
-	
-	return temp2
-	
-print(f'7 The result is {myFunc(70, 150, 35)}')  #Test
+
+#Calculate BMI
+
+	BMI = (weight / (height ** 2)) * 703
+
+	return BMI
+
+print(f'7 Your BMI is: {BMI(68, 170):.2f}')  #Test
 	
 	
 	
