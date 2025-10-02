@@ -177,7 +177,7 @@ print(f'5 The total cost of insulating the basement is: ${insulate_home_cost():.
 #  - Run this line of code: midpoint_of_10 = midpoint(10)
 # (20 points)
 
-from extra_functions_hw2 import midpoint
+from extra_functions_hw2_minh_tran import midpoint
 midpoint_of_10 = midpoint(100)
 print(f'6 The midpoint between 10 and 0 is: {midpoint_of_10}')  #Test
 
