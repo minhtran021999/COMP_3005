@@ -141,7 +141,54 @@ The following are (3 pts) each
 
     1.e: Calculate the gas_vehicle driving range on a full tank of gas using the associated instance method.
 '''
+#creating Vehicle class
+class Vehicle:
+    '''
+    This is the Car class, containing its attribute data and methods as defined below:
 
+    Attribute data:
+        # color (str)
+        # year (int)
+        # make (str)
+        # model (str)
+        # top_speed in miles/hour (float)
+        # mpg (miles per gallon, float)
+        # engine_type (gas, electric) (str)
+        # tank_capacity (gal)
+        # ev_capacity (kWh) -- between 50 & 100
+        # ev_efficiency (miles/kWh) -- between 3 & 5
+
+    Attribute method:
+        # "vehicle_range_miles": this method takes no arguments and returns a float which should be
+        the total range (miles) of the vehicle. This method must work for either gas and electric engine types.
+    '''
+
+    #attribute data
+    def __init__(self, color, year, make, model, engine_type, top_speed, mpg=None, tank_capacity=None, ev_efficiency=None, ev_capacity=None):
+        '''
+        Attribute data initiation
+        '''
+        self.color = color
+        self.year = year
+        self.make = make
+        self.model = model
+        self.engine_type = engine_type
+        self.top_speed = top_speed
+        self.mpg = mpg
+        self.tank_capacity = tank_capacity
+        self.ev_efficiency = ev_efficiency
+        self.ev_capacity = ev_capacity
+
+    #attribute method
+    def vehicle_range_miles(self):
+        '''
+        This method calculates the maximum range a vehicle can cover with a full tank of gas (engine_type: 'gas'),
+        or when fully charged (engine_type: 'electric')
+        '''
+        if self.engine_type == 'gas':
+            return self.mpg * self.tank_capacity
+        else:
+            return self.ev_capacity * self.ev_efficiency
 
 ##### Exercise 2. - multiple parts 
 
@@ -185,7 +232,60 @@ The following are (3 pts) each
  #2.e - determine the driving range of the third car
 #2.f - calculate the total number of GasCars that have been created (3 pts)
  
- 
+ #create GasCar class inheriting from parent class Vehicle
+class GasCar(Vehicle):
+    '''
+    This is GasCar class, inheriting from the parent class Vehicle
+
+    Attribute data:
+        # all attributes from Vehicle, plus:
+        # num_doors (this includes the hatch/tail gate, int)
+
+    Attribute methods:
+        # change_color: this method takes in a color as an argument (str)
+        # and change the color attribute of the Car instance
+
+        # car_info: this method takes no arguments and return a string
+        # with the basic car info in the format : "make - model - color - num_doors"
+
+        # better_mileage: this method takes two instances of the Car
+        # class and returns the car info, using the car_info method, of the car
+        # instance that gets the better mileague - mpg or efficiency, depending on engine_type.
+
+    '''
+    #counter for instances created
+    num_car = 0
+
+    #attribute initiation
+    def __init__ (self, color, year, make, model, engine_type, top_speed, mpg=None, tank_capacity=None,
+                  ev_efficiency=None, ev_capacity=None, num_doors=None):
+        '''
+        Attribute initiation by calling the init method from the parent class Vehicle and pass in data,
+        then creating new attribute called num_doors
+        '''
+
+        super().__init__(color, year, make, model, engine_type, top_speed, mpg, tank_capacity, ev_efficiency, ev_capacity)
+        self.num_doors = num_doors
+        GasCar.num_car += 1
+
+    #attribute methods
+    def change_color(self, color):
+        '''
+        This method changes the 'color' attribute of the instance
+        '''
+        self.color = color
+        return self.color
+
+    def car_info(self):
+        return f'{self.color} - {self.make} - {self.model} - {self.num_doors}'
+
+    def better_mileage(self, other):
+        if self.vehicle_range_miles() > other.vehicle_range_miles():
+            return self.car_info()
+        else:
+            return other.car_info()
+
+    
 
 if __name__ == '__main__':
     
@@ -193,10 +293,56 @@ if __name__ == '__main__':
 
     # put statements, expressions, and executable code here
 
+    #(color, year, make, model, engine_type, top_speed, mpg, tank_capacity, ev_efficiency, ev_capacity)
+
+    # 1.a: Create an instance of the Vehicle class called 'gas_vehicle' for a 1955, red, chevrolet, Bel Air, 
+    # that has a top speed of 132 mph, with a 12 gallon capacity gas engine that gets 13.3 mpg. 
+    gas_vehicle = Vehicle('red', 1955, 'chevrolet', 'bel air', 'gas', 132.0, 13.3, 12.5)
+
+    # 1.b: Create an instance of the Vehicle class called 'electric_vehicle' for a 2025, silver, Tesla, 
+    # Model 3, that has a top speed of 163 miles/kWh, an ev_capacity of 82.0, and an ev_efficiency of 4.2
+    electric_vehicle = Vehicle('silver', 2025, 'tesla', 'model 3', 'electric', 163.0, None, None, 4.2, 82.0)
+
+    # 1.c: Using f-string style and the instance attributes, print the gas_vehicle make, model, and mpg 
+    print(f'gas_vehicle: \n make: {gas_vehicle.make} \n model: {gas_vehicle.model} \n mpg: {gas_vehicle.mpg} \n')
+
+    # 1.d: Using f-string style and the instance attributes, print the electric_vehicle make, model, ev_capacity and ev_efficiency. 
+    print(f'electric_vehicle: \n make: {electric_vehicle.make} \n model: {electric_vehicle.model} \n ev_capacity: {electric_vehicle.ev_capacity} \n ev_efficiency: {electric_vehicle.ev_efficiency} \n ')
+
+    # 1.e: Calculate the gas_vehicle driving range on a full tank of gas using the associated instance method.
+    print(gas_vehicle.vehicle_range_miles())
+
+
     print("\n#### Exercise 2. ####\n")
 
     # put statements, expressions, and executable code here
     
-    
+    #2.a - create three GasCar instances based on the following information.
+    # the first car is a silver 4-door honda civic (2015) that gets 32.0 mpg and can reach 130 miles/hr. It has a tank capacity of 12.4 gal.
+    # the second car is a 2008 ford mustang gt that's red and has two doors. It can reach up to 155 miles/hr on a 16.0 gal tank and gets 17.0 mpg. 
+    # the third car is a Toyota Camry that's blue and was made in 2022. It has 4 doors. It also has a 15.8 gal tank and gets 32.0 mpg. It's top speed is 135.
+    car1 = GasCar('silver', 2015, 'honda', 'civic', 'gas',130.0, 32.0, 12.4, None, None, 4)
+    # print(car1.car_info())
 
+    car2 = GasCar('red', 2008, 'ford', 'mustang', 'gas', 155.0, 17.0, 16.0, None, None, 2)
+    # print(car2.car_info())
+
+    car3 = GasCar('blue', 2022, 'toyota', 'camry', 'gas', 135.0, 32.0, 15.8, None, None, 4)
+    # print(car3.car_info())
+
+    #2.b - change the color of the first car to purple and verify the change using a print statement (f-string style).
+    car1.change_color('purple')
+    print(car1.color)
+    
+    #2.c - print out the make, model, color, and number of doors for the third car.
+    print(car3.car_info())
+
+    #2.d - determine whether the second car gets better mileage than the first car (use an instance method). 
+    print(car2.better_mileage(car1))
+    
+    #2.e - determine the driving range of the third car
+    print(car3.vehicle_range_miles())
+    
+    #2.f - calculate the total number of GasCars that have been created (3 pts)
+    print(GasCar.num_car)
  
