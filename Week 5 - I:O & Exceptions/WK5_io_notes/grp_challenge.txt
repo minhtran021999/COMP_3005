@@ -1,0 +1,18 @@
+Group Challenge – Python classes & exception handling
+
+Assign a class coder who will code your solution and share it after our time is complete.  
+
+Create a class called ‘Vehicle’ that includes the following attributes: color, year, make, model, top_speed, mpg, and tank_capacity.
+
+Create a private helper method called “_validate_positive_number” that has three parameters (value, attribute name, is_integer). Note that 'is_integer' is a default parameter (boolean). 
+
+The method should include exception handling (try/except, raise) and conditional statements to validate whether an attribute value is an integer or float and whether it is a positive value. A user should be notified of the relevant error. 
+
+***The helper method should precede the attributes in order of sequence. Attributes that have numerical values should be defined using the “validate_positive_number” method. 
+For example: temp_celcius = validate_positive_number(some parameters)***
+
+Include a method called “vehicle_range_miles” to calculate and return the vehicle’s maximum driving range. The vehicle is a gas vehicle. Be sure to check again for non-positive values and notify the user if an error is detected. 
+
+Create an instance of the class using: Vehicle('red', 1955, 'Chevrolet', 'Bel Air', 132, 13.3, 12)
+
+Time permitting, test your code with 'edge' cases
