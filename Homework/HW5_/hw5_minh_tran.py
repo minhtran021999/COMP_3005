@@ -294,7 +294,7 @@ if __name__ == '__main__':
   # print(input_data('buyPriceMadrid.csv'))
 
   #Test 2
-  # print(list_of_floats(input_data('buyPriceMadrid.csv')))
+  print(list_of_floats(input_data('buyPriceMadrid.csv')))
 
   #Test 3
   # print(compute_average(list_of_floats(input_data('buyPriceMadrid.csv'))))

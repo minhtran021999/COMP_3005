@@ -304,7 +304,7 @@ if __name__ == '__main__':
 
 
 # test1
-#print(import_data("hw6_data.csv"))
+# print(import_data("hw6_data.csv"))
 
 # test2
 # print(cast_data(import_data("hw6_data.csv")))
@@ -322,4 +322,4 @@ if __name__ == '__main__':
 # print(all_pairs([1, 4, 6, 8], [5, 2, 6]))
 
 # test7
-# print(remove_dups( [(1, 2), (1, 4, 5), (1, 2), (3, 5)] ))
+print(remove_dups( [(1, 2), (1, 4, 5), (1, 2), (3, 5)] ))
