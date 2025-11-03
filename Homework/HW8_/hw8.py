@@ -295,32 +295,35 @@ def senators_info(filename):
     json: a json file with extracted information
     list: a list of dictionaries with extracted information 
   '''
+  try:
 
-  with open(filename, 'r') as f:
-    data = json.load(f)
+    with open(filename, 'r') as f:
+      data = json.load(f)
 
-  senators_list = []
+    senators_list = []
 
-  for senator in data['objects']:
-    senator_dict = {
-      'first_name': senator.get('person').get('firstname'),
-      'last_name': senator.get('person').get('lastname'),
-      'state': senator.get('state'),
-      'party': senator.get('party'),
-      'start_date': senator.get('startdate'),  # Assuming 'senator_rank' indicates start date
-      'congress_numbers': senator.get('congress_numbers'),
-      'contact_form': senator.get('extra').get('contact_form'),
-      'phone_number': senator.get('phone'),
-      'twitter_handle': senator.get('person').get('twitterid'),
-      'birthday': senator.get('person').get('birthday'),
-      'nickname': senator.get('person').get('nickname')
-    }
-    senators_list.append(senator_dict)
+    for senator in data['objects']:
+      senator_dict = {
+        'first_name': senator.get('person').get('firstname'),
+        'last_name': senator.get('person').get('lastname'),
+        'state': senator.get('state'),
+        'party': senator.get('party'),
+        'start_date': senator.get('startdate'),  # Assuming 'senator_rank' indicates start date
+        'congress_numbers': senator.get('congress_numbers'),
+        'contact_form': senator.get('extra').get('contact_form'),
+        'phone_number': senator.get('phone'),
+        'twitter_handle': senator.get('person').get('twitterid'),
+        'birthday': senator.get('person').get('birthday'),
+        'nickname': senator.get('person').get('nickname')
+      }
+      senators_list.append(senator_dict)
 
-  with open('senatorsInfo.json', 'w') as f:
-    json.dump(senators_list, f, indent=2)
-  return senators_list
-
+    with open('senatorsInfo.json', 'w') as f:
+      json.dump(senators_list, f, indent=2)
+    return senators_list
+  
+  except FileNotFoundError:
+    raise FileNotFoundError(f"The file {filename} was not found.")
 
 # 7. Write a function, called no_contact_form, that takes in a filename,
 # loads the data in from a json file and returns a list containing the first
@@ -338,19 +341,22 @@ def no_contact_form(filename):
   Returns:
     list: a list of senators without a contact form
   '''
+  try: 
+    
+    with open(filename, 'r') as f:
+      data = json.load(f)
 
-  with open(filename, 'r') as f:
-    data = json.load(f)
+    no_contact_list = []
 
-  no_contact_list = []
+    for senator in data['objects']:
+      if not senator.get('extra').get('contact_form'):
+        full_name = f"{senator.get('person').get('firstname')} {senator.get('person').get('lastname')}"
+        no_contact_list.append(full_name)
 
-  for senator in data['objects']:
-    if not senator.get('extra').get('contact_form'):
-      full_name = f"{senator.get('person').get('firstname')} {senator.get('person').get('lastname')}"
-      no_contact_list.append(full_name)
+    return no_contact_list
 
-  return no_contact_list
-
+  except FileNotFoundError:
+    raise FileNotFoundError(f"The file {filename} was not found.")
 
 # 8. Write a function, called congress_session_members, that takes a congress session session_number (int) 
 # and a filename (str). It should load the data created in question 6 and search for all the senators that 
@@ -382,24 +388,27 @@ def congress_session_members(session_number, filename):
     list: a list of senators that were part of a particular session of congress
   '''
 
-  with open(filename, 'r') as f:
-    data = json.load(f)
+  try:
 
-  session_senators = []
-  count = 0
+    with open(filename, 'r') as f:
+      data = json.load(f)
 
-  for senator in data:
-    if session_number in senator.get('congress_numbers', []):
-      session_senators.append(senator)
-      count += 1
-  # session_senators.append(f'Total senators in session {session_number}: {count}')
+    session_senators = []
+    count = 0
 
-  output_filename = f'congress_session{session_number}.json'
-  with open(output_filename, 'w') as f:
-    json.dump(session_senators, f, indent=2)
+    for senator in data:
+      if session_number in senator.get('congress_numbers', []):
+        session_senators.append(senator)
+        count += 1
+    # session_senators.append(f'Total senators in session {session_number}: {count}')
 
-  return session_senators
+    output_filename = f'congress_session{session_number}.json'
+    with open(output_filename, 'w') as f:
+      json.dump(session_senators, f, indent=2)
 
+    return session_senators
+  except FileNotFoundError:
+    raise FileNotFoundError(f"The file {filename} was not found.")
 
 #-----------------------------------------------------------------------------------------------
 
@@ -439,12 +448,15 @@ if __name__ == '__main__':
 # print(adds_to_K(10, [1,2,5,6,0]))
 
 # test 6
+# print(senators_info('demo.json'))
 # print(senators_info('senators.json'))
 
 # test 7
+# print(no_contact_form('demo.json'))
 # print(no_contact_form('senators.json'))
 
 # test 8
+# print(congress_session_members(115, 'demo.json'))
 # print(congress_session_members(116, 'senatorsInfo.json'))
 # print(congress_session_members(117, 'senatorsInfo.json'))
 # print(congress_session_members(118, 'senatorsInfo.json'))
