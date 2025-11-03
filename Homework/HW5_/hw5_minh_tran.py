@@ -86,7 +86,7 @@ def list_of_floats(data_list):
     data (list): A list of values to be converted to floats
 
   Returns:
-  list: A list of floats, excluding any values that cannot be converted
+    list: A list of floats, excluding any values that cannot be converted
   
   Errors Handled:
     ValueError: If a value cannot be converted to float, skip that thang

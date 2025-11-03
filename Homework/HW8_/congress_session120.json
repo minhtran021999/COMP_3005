@@ -1,0 +1,581 @@
+[
+  {
+    "first_name": "Michael",
+    "last_name": "Bennet",
+    "state": "CO",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.bennet.senate.gov/public/index.cfm/contact",
+    "phone_number": "202-224-5852",
+    "twitter_handle": "SenatorBennet",
+    "birthday": "1964-11-28",
+    "nickname": ""
+  },
+  {
+    "first_name": "Richard",
+    "last_name": "Blumenthal",
+    "state": "CT",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.blumenthal.senate.gov/contact/",
+    "phone_number": "202-224-2823",
+    "twitter_handle": "SenBlumenthal",
+    "birthday": "1946-02-13",
+    "nickname": ""
+  },
+  {
+    "first_name": "John",
+    "last_name": "Boozman",
+    "state": "AR",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.boozman.senate.gov/public/index.cfm/contact",
+    "phone_number": "202-224-4843",
+    "twitter_handle": "JohnBoozman",
+    "birthday": "1950-12-10",
+    "nickname": ""
+  },
+  {
+    "first_name": "Michael",
+    "last_name": "Crapo",
+    "state": "ID",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.crapo.senate.gov/contact",
+    "phone_number": "202-224-6142",
+    "twitter_handle": "MikeCrapo",
+    "birthday": "1951-05-20",
+    "nickname": "Mike"
+  },
+  {
+    "first_name": "Charles",
+    "last_name": "Grassley",
+    "state": "IA",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.grassley.senate.gov/contact",
+    "phone_number": "202-224-3744",
+    "twitter_handle": "ChuckGrassley",
+    "birthday": "1933-09-17",
+    "nickname": "Chuck"
+  },
+  {
+    "first_name": "John",
+    "last_name": "Hoeven",
+    "state": "ND",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.hoeven.senate.gov/public/index.cfm/email-the-senator",
+    "phone_number": "202-224-2551",
+    "twitter_handle": "SenJohnHoeven",
+    "birthday": "1957-03-13",
+    "nickname": ""
+  },
+  {
+    "first_name": "Ron",
+    "last_name": "Johnson",
+    "state": "WI",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.ronjohnson.senate.gov/public/index.cfm/email-the-senator",
+    "phone_number": "202-224-5323",
+    "twitter_handle": "SenRonJohnson",
+    "birthday": "1955-04-08",
+    "nickname": ""
+  },
+  {
+    "first_name": "James",
+    "last_name": "Lankford",
+    "state": "OK",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.lankford.senate.gov/contact/email",
+    "phone_number": "202-224-5754",
+    "twitter_handle": "SenatorLankford",
+    "birthday": "1968-03-04",
+    "nickname": ""
+  },
+  {
+    "first_name": "Mike",
+    "last_name": "Lee",
+    "state": "UT",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.lee.senate.gov/public/index.cfm/contact",
+    "phone_number": "202-224-5444",
+    "twitter_handle": "SenMikeLee",
+    "birthday": "1971-06-04",
+    "nickname": ""
+  },
+  {
+    "first_name": "Jerry",
+    "last_name": "Moran",
+    "state": "KS",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.moran.senate.gov/public/index.cfm/e-mail-jerry",
+    "phone_number": "202-224-6521",
+    "twitter_handle": "JerryMoran",
+    "birthday": "1954-05-29",
+    "nickname": ""
+  },
+  {
+    "first_name": "Lisa",
+    "last_name": "Murkowski",
+    "state": "AK",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.murkowski.senate.gov/public/index.cfm/contact",
+    "phone_number": "202-224-6665",
+    "twitter_handle": "LisaMurkowski",
+    "birthday": "1957-05-22",
+    "nickname": ""
+  },
+  {
+    "first_name": "Patty",
+    "last_name": "Murray",
+    "state": "WA",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.murray.senate.gov/write-to-patty/",
+    "phone_number": "202-224-2621",
+    "twitter_handle": "PattyMurray",
+    "birthday": "1950-10-11",
+    "nickname": ""
+  },
+  {
+    "first_name": "Rand",
+    "last_name": "Paul",
+    "state": "KY",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.paul.senate.gov/connect/email-rand",
+    "phone_number": "202-224-4343",
+    "twitter_handle": "SenRandPaul",
+    "birthday": "1963-01-07",
+    "nickname": ""
+  },
+  {
+    "first_name": "Marco",
+    "last_name": "Rubio",
+    "state": "FL",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.rubio.senate.gov/public/index.cfm/contact",
+    "phone_number": "202-224-3041",
+    "twitter_handle": "SenRubioPress",
+    "birthday": "1971-05-28",
+    "nickname": ""
+  },
+  {
+    "first_name": "Charles",
+    "last_name": "Schumer",
+    "state": "NY",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.schumer.senate.gov/contact/email-chuck",
+    "phone_number": "202-224-6542",
+    "twitter_handle": "SenSchumer",
+    "birthday": "1950-11-23",
+    "nickname": "Chuck"
+  },
+  {
+    "first_name": "Tim",
+    "last_name": "Scott",
+    "state": "SC",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.scott.senate.gov/contact/email-me",
+    "phone_number": "202-224-6121",
+    "twitter_handle": "SenatorTimScott",
+    "birthday": "1965-09-19",
+    "nickname": ""
+  },
+  {
+    "first_name": "John",
+    "last_name": "Thune",
+    "state": "SD",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.thune.senate.gov/public/index.cfm/contact",
+    "phone_number": "202-224-2321",
+    "twitter_handle": "SenJohnThune",
+    "birthday": "1961-01-07",
+    "nickname": ""
+  },
+  {
+    "first_name": "Chris",
+    "last_name": "Van Hollen",
+    "state": "MD",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.vanhollen.senate.gov/contact/email",
+    "phone_number": "202-224-4654",
+    "twitter_handle": "ChrisVanHollen",
+    "birthday": "1959-01-10",
+    "nickname": ""
+  },
+  {
+    "first_name": "Peter",
+    "last_name": "Welch",
+    "state": "VT",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.welch.senate.gov/",
+    "phone_number": "202-224-4242",
+    "twitter_handle": "PeterWelch",
+    "birthday": "1947-05-02",
+    "nickname": ""
+  },
+  {
+    "first_name": "Ron",
+    "last_name": "Wyden",
+    "state": "OR",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.wyden.senate.gov/contact/",
+    "phone_number": "202-224-5244",
+    "twitter_handle": "RonWyden",
+    "birthday": "1949-05-03",
+    "nickname": ""
+  },
+  {
+    "first_name": "Todd",
+    "last_name": "Young",
+    "state": "IN",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.young.senate.gov/contact",
+    "phone_number": "202-224-5623",
+    "twitter_handle": "SenToddYoung",
+    "birthday": "1972-08-24",
+    "nickname": ""
+  },
+  {
+    "first_name": "Brian",
+    "last_name": "Schatz",
+    "state": "HI",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.schatz.senate.gov/contact",
+    "phone_number": "202-224-3934",
+    "twitter_handle": "SenBrianSchatz",
+    "birthday": "1972-10-20",
+    "nickname": ""
+  },
+  {
+    "first_name": "Tammy",
+    "last_name": "Duckworth",
+    "state": "IL",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.duckworth.senate.gov/content/contact-senator",
+    "phone_number": "202-224-2854",
+    "twitter_handle": "SenDuckworth",
+    "birthday": "1968-03-12",
+    "nickname": ""
+  },
+  {
+    "first_name": "John",
+    "last_name": "Kennedy",
+    "state": "LA",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.kennedy.senate.gov/public/email-me",
+    "phone_number": "202-224-4623",
+    "twitter_handle": "SenJohnKennedy",
+    "birthday": "1951-11-21",
+    "nickname": ""
+  },
+  {
+    "first_name": "Margaret",
+    "last_name": "Hassan",
+    "state": "NH",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.hassan.senate.gov/content/contact-senator",
+    "phone_number": "202-224-3324",
+    "twitter_handle": "SenatorHassan",
+    "birthday": "1958-02-27",
+    "nickname": "Maggie"
+  },
+  {
+    "first_name": "Catherine",
+    "last_name": "Cortez Masto",
+    "state": "NV",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.cortezmasto.senate.gov/contact",
+    "phone_number": "202-224-3542",
+    "twitter_handle": "SenCortezMasto",
+    "birthday": "1964-03-29",
+    "nickname": ""
+  },
+  {
+    "first_name": "Ted",
+    "last_name": "Budd",
+    "state": "NC",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.budd.senate.gov/",
+    "phone_number": "202-224-3154",
+    "twitter_handle": "RepTedBudd",
+    "birthday": "1971-10-21",
+    "nickname": ""
+  },
+  {
+    "first_name": "Mark",
+    "last_name": "Kelly",
+    "state": "AZ",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.kelly.senate.gov",
+    "phone_number": "202-224-2235",
+    "twitter_handle": "SenMarkKelly",
+    "birthday": "1964-02-21",
+    "nickname": ""
+  },
+  {
+    "first_name": "Alejandro",
+    "last_name": "Padilla",
+    "state": "CA",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.padilla.senate.gov/contact/",
+    "phone_number": "202-224-3553",
+    "twitter_handle": "SenAlexPadilla",
+    "birthday": "1973-03-22",
+    "nickname": "Alex"
+  },
+  {
+    "first_name": "Raphael",
+    "last_name": "Warnock",
+    "state": "GA",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.warnock.senate.gov/contact/",
+    "phone_number": "202-224-3643",
+    "twitter_handle": "SenatorWarnock",
+    "birthday": "1969-07-23",
+    "nickname": ""
+  },
+  {
+    "first_name": "Katie",
+    "last_name": "Britt",
+    "state": "AL",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.britt.senate.gov/",
+    "phone_number": "202-224-5744",
+    "twitter_handle": null,
+    "birthday": "1982-02-02",
+    "nickname": ""
+  },
+  {
+    "first_name": "Eric",
+    "last_name": "Schmitt",
+    "state": "MO",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.schmitt.senate.gov/",
+    "phone_number": "202-224-5721",
+    "twitter_handle": null,
+    "birthday": "1975-06-20",
+    "nickname": ""
+  },
+  {
+    "first_name": "J.D. (James)",
+    "last_name": "Vance",
+    "state": "OH",
+    "party": "Republican",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.vance.senate.gov/",
+    "phone_number": "202-224-3353",
+    "twitter_handle": null,
+    "birthday": "1984-08-02",
+    "nickname": ""
+  },
+  {
+    "first_name": "John",
+    "last_name": "Fetterman",
+    "state": "PA",
+    "party": "Democrat",
+    "start_date": "2023-01-03",
+    "congress_numbers": [
+      118,
+      119,
+      120
+    ],
+    "contact_form": "https://www.fetterman.senate.gov/",
+    "phone_number": "202-224-4254",
+    "twitter_handle": null,
+    "birthday": "1969-08-15",
+    "nickname": ""
+  },
+  "Total senators in session 120: 34"
+]
