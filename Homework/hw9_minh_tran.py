@@ -201,17 +201,17 @@ if __name__ == '__main__':
   pass
 
 # test 1
-  # print(recFactorial(5))
+print(recFactorial(5))
 
 # test 2
-  # print(dogLegs(10))
+# print(dogLegs(10))
 
 # test 3
-# print(numBlocks(3))
+print(numBlocks(3))
 
 # test 4
-# print(containsTarget(['cat', -98, True, 'dog', 1, 2], 'dog'))  
-# print(containsTarget(['cat', -98, False, 'dog', 1, 2], 'dawg'))  
+# print(containsTarget(['cat', -98, True, 'dog', 1, 2], 'dog'))
+# print(containsTarget(['cat', -98, False, 'dog', 1, 2], 'dawg'))
 
 # test 5
 # print(countTarget(['bowl', 'spoon', 'bowl', 'fork', 'bowl'], 'bowl'))
