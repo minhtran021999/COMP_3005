@@ -109,7 +109,7 @@ def sort_strings(list_of_string):
 
   for i in range(n-1):
     for j in range(n-1-i):
-      if list_of_string[j] > list_of_string[j+1]:
+      if len(list_of_string[j]) > len(list_of_string[j+1]):
         list_of_string[j], list_of_string[j+1] = list_of_string[j+1], list_of_string[j]
   
   return list_of_string
@@ -402,7 +402,7 @@ if __name__ == '__main__':
 # print(check_palindrome([1,2,3]))
 
 # # test 2
-# print(sort_strings([5,2,4,1, 18, 45, 1100, 12, 0, -1, -45]))
+# print(sort_strings(['apple', 'banana', 'kiwi', 'grape', 'strawberry', 'fig', 'blueberry']))
 # edge cases 2
 # print(sort_strings([]))
 # print(sort_strings([1]))
